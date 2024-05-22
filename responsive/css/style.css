@@ -1,0 +1,933 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+/* 기본설정 */
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.info_section {
+    background-color: #2ecc71;
+}
+
+.slider_section {
+    background-color: #aaa;
+}
+
+.gallery_section {
+    background-color: #bbb;
+}
+
+.rankup_section {
+    background-color: #ccc;
+}
+
+.latest_section {
+    background-color: #ddd;
+}
+
+.popular_section {
+    background-color: #eee;
+}
+
+.benner_box_1 {
+    background-color: #999;
+}
+
+.benner_box_2 {
+    background-color: #888;
+}
+
+.social_section {
+    background-color: #777;
+}
+
+.footer {
+    background-color: #666;
+}
+
+
+/* 인포메이션설정 */
+.info_section {
+    position: absolute;
+    z-index: 999;
+    top: 30px;
+    right: 30px;
+}
+
+.info_section ul {
+    display: flex;
+}
+
+.info_section li {}
+
+.info_section li a {
+    display: block;
+    padding: 20px;
+}
+
+
+/* 헤더설정 */
+.header {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    order: 1;
+    z-index: 11;
+}
+
+.header h1 {
+    width: 12.5%;
+    height: 200px;
+    background-color: #2ecc71;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+}
+
+.header nav {
+    width: 87.5%;
+    height: 140px;
+    background-color: #2ecc71;
+}
+
+/* 슬라이더설정 */
+.slider_section {
+    width: 50%;
+    height: 450px;
+    order: 2;
+}
+
+/* 갤러리설정 */
+.gallery_section {
+    width: 25%;
+    height: 450px;
+    order: 3;
+}
+
+/* 인기검색어설정 */
+.rankup_section {
+    width: 25%;
+    height: 450px;
+    order: 4;
+}
+
+/* 최근글영역 */
+.latest_section {
+    width: 30%;
+    height: 300px;
+    order: 5;
+}
+
+/* 인기글영역 */
+.popular_section {
+    width: 30%;
+    height: 300px;
+    order: 6;
+}
+
+/* 배너영역 */
+.banner_section {
+    width: 25%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    order: 7;
+}
+
+.benner_box_1 {
+    width: 100%;
+    height: 50%;
+}
+
+.benner_box_2 {
+    width: 100%;
+    height: 50%;
+}
+
+/* 소셜영역 */
+
+.social_section {
+    width: 15%;
+    height: 300px;
+    order: 8;
+}
+
+/* footer 설정 */
+
+.footer {
+    width: 100%;
+    height: 100px;
+    order: 9;
+}
+
+/* 상세설정 */
+
+/* 헤더_로고설정 */
+.header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 a {
+    text-align: center;
+    color: #fff;
+}
+
+.header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header nav ul {
+    display: flex;
+}
+
+.header nav li {
+    display: block;
+    padding: 20px;
+}
+
+.header nav li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.header nav span {
+    display: none
+}
+
+/* 슬라이더섹션설정 */
+.slider_section {
+    background-image: url(../images/p_images/slider_01.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+}
+
+.slider_section span {
+    position: absolute;
+    width: 34px;
+    height: 39px;
+    top: 50%;
+    margin-top: -19.5px;
+    background-image: url(../images/s_images/slider_arrow.png);
+    text-indent: -9999px;
+}
+
+.slider_section .prev_btn {
+    left: 0;
+    margin-left: -9px;
+    background-position: 0 0;
+}
+
+.slider_section .next_btn {
+    right: 0;
+    margin-right: -9px;
+    background-position: -34px 0;
+}
+
+/* 갤러리구간설정 */
+.gallery_section {
+    background-color: #d65d5d;
+}
+
+.gallery_section ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery_section li {}
+
+.gallery_section a {
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: bold;
+}
+
+.gallery_section figure {
+    text-align: center;
+}
+
+.gallery_section img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.gallery_section figcaption {
+    margin-top: 20px;
+}
+
+/* 인기검색어 상세설정 */
+.rankup_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #219af7;
+}
+
+.rankup_section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.rankup_section ol {
+    counter-reset: rankup 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* .rankup_section li::before {
+    counter-increment: rankup 1;
+    content: counter(rankup-counter) '.';    
+} */
+
+/* li의 내용 앞부분에 숫자를 기재해서 추후 개발모드가 들어갔을때 순번을 나타낸다. */
+
+.rankup_section li {
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.rankup_section a {
+    display: block;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+/* 최근 글 상세설정 */
+.latest_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffae00;
+}
+
+.latest_section h2 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.latest_section ul {
+    list-style: circle;
+}
+
+.latest_section li {
+    margin-bottom: 7px;
+    color: #fff;
+}
+
+.latest_section a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* 인기 글 상세설정 */
+.popular_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9b00a0;
+}
+
+.popular_section h2 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.popular_section ul {
+    list-style: circle;
+}
+
+.popular_section li {
+    padding: 5px 0;
+    color: #fff;
+}
+
+.popular_section a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+/* 배너섹션 상세설정 */
+.banner_section {
+
+}
+ 
+.benner_box_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff2c5a;
+}
+
+.banner_section .benner_box_1 a {
+
+}
+
+.banner_section .benner_box_1 img {
+
+}
+
+.banner_section .benner_box_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7e0034;
+}
+
+.banner_section .benner_box_2 ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.banner_section .benner_box_2 li {
+    display: block;
+
+}
+
+.banner_section .benner_box_2 a {
+    padding: 10px;
+}
+
+.banner_section .benner_box_2 img {
+
+}
+
+
+/* 소셜섹션 상세설정 */
+.social_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.slider_section ul {
+
+}
+
+.social_section li {
+    display: block;
+    padding: 15px;
+}
+
+.social_section a {
+    
+}
+
+.social_section img {
+
+}
+
+/* 푸터 상세설정 */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer p {
+    color: #fff;
+    margin-left: 20px ;
+}
+
+
+
+
+/* 미디어쿼리구간 ----------------------------------------------- */
+/* 모바일구간설정 */
+@media(max-width:599px) {
+
+    /* 인포메이션설정 */
+    .info_section {
+        position: relative;
+        z-index: 999;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+    }
+
+    .info_section ul {
+        display: flex;
+        width: 100%;
+    }
+
+    .info_section li {
+        width: 25%;
+    }
+
+    .info_section li a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    /* 헤더설정 */
+    .header {
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        flex-direction: column;
+        order: 1;
+    }
+
+    .header h1 {
+        width: 100%;
+        height: 200px;
+        background-color: #2ecc71;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .header nav {
+        width: 100%;
+        height: 140px;
+        background-color: #2ecc71;
+    }
+
+
+    /* 슬라이더설정 */
+    .slider_section {
+        width: 100%;
+        height: 200px;
+        order: 2;
+
+    }
+
+    /* 최근글영역 */
+    .latest_section {
+        width: 100%;
+        height: 200px;
+        order: 3;
+        padding: 20px 0;
+    }
+
+    /* 인기글영역 */
+    .popular_section {
+        width: 100%;
+        height: 200px;
+        order: 4;
+        padding: 20px 0;
+    }
+
+    /* 갤러리설정 */
+    .gallery_section {
+        width: 100%;
+        height: 800px;
+        order: 5;
+    }
+
+    /* 인기검색어설정 */
+    .rankup_section {
+        width: 100%;
+        height: 300px;
+        order: 6;
+        padding: 40px 0;
+    }
+
+    /* 배너영역 */
+    .banner_section {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        order: 7;
+    }
+
+    /* 소셜영역 */
+
+    .social_section {
+        width: 100%;
+        height: 100px;
+        order: 8;
+    }
+
+    /* 토글설정 */
+    .header nav {
+        position: relative;
+    }
+
+    .header nav span {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/s_images/menu_toggle_btn.png);
+        position: absolute;
+        right: 20px;
+        text-indent: -9999px;
+        top: 50%;
+        margin-top: -15px;
+    }
+
+    /* 갤러리구간설정 */
+    .gallery_section {
+        background-color: #d65d5d;
+    }
+
+    .gallery_section ul {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .gallery_section li {}
+
+    .gallery_section a {
+        display: block;
+        padding: 20px;
+        box-sizing: border-box;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .gallery_section figure {
+        text-align: center;
+    }
+
+    .gallery_section img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .gallery_section figcaption {
+        margin-top: 20px;
+    }
+
+    /* 인기검색어 상세설정 */
+    .rankup_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #219af7;
+    }
+
+    .rankup_section h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .rankup_section ol {
+        width: 80%;
+        counter-reset: rankup 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    /* .rankup_section li::before {
+    counter-increment: rankup 1;
+    content: counter(rankup-counter) '.';    
+} */
+
+    /* li의 내용 앞부분에 숫자를 기재해서 추후 개발모드가 들어갔을때 순번을 나타낸다. */
+
+    .rankup_section li {
+        color: #fff;
+        text-align: left;
+        font-weight: bold;
+        width: 45%;
+        margin-bottom: 5px;
+    }
+
+    .rankup_section a {
+        border: 1px solid #fff;
+        display: block;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        padding: 8px 0;
+        border-radius: 5px;
+    }
+
+    /* 소셜섹션 상세설정 */
+.social_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.social_section ul {
+    display: flex;
+    width: 80%;
+    
+}
+
+.social_section li {
+    display: block;
+    padding: 15px;
+}
+
+
+}
+
+/* 테블릿구간설정 */
+@media(min-width:600px) and (max-width:768px) {
+
+    /* 인포메이션설정 */
+    .info_section {
+        position: relative;
+        z-index: 999;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+    }
+
+    .info_section ul {
+        display: flex;
+        width: 100%;
+    }
+
+    .info_section li {
+        width: 25%;
+    }
+
+    .info_section li a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+
+    /* 슬라이더설정 */
+    .slider_section {
+        width: 60%;
+        height: 300px;
+        order: 2;
+    }
+
+    /* 인기검색어설정 */
+    .rankup_section {
+        width: 40%;
+        height: 300px;
+        order: 3;
+    }
+
+    /* 최근글영역 */
+    .latest_section {
+        width: 40%;
+        height: 270px;
+        order: 4;
+    }
+
+    /* 인기글영역 */
+    .popular_section {
+        width: 40%;
+        height: 270px;
+        order: 5;
+    }
+
+    /* 소셜영역 */
+
+    .social_section {
+        width: 20%;
+        height: 270px;
+        order: 6;
+    }
+
+    /* 갤러리설정 */
+    .gallery_section {
+        width: 70%;
+        height: 250px;
+        order: 7;
+    }
+
+    /* 배너영역 */
+    .banner_section {
+        width: 30%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        order: 8;
+    }
+
+
+    /* 토글설정 */
+    .header nav {
+        position: relative;
+    }
+
+    .header nav span {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/s_images/menu_toggle_btn.png);
+        position: absolute;
+        right: 20px;
+        text-indent: -9999px;
+        top: 50%;
+        margin-top: -15px;
+    }
+
+     /* 갤러리구간설정 */
+     .gallery_section {
+        background-color: #d65d5d;
+    }
+
+    .gallery_section ul {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .gallery_section li {}
+
+    .gallery_section a {
+        display: block;
+        padding: 20px;
+        box-sizing: border-box;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .gallery_section figure {
+        text-align: center;
+    }
+
+    .gallery_section img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .gallery_section figcaption {
+        margin-top: 20px;
+    }
+
+    /* 인기검색어 상세설정 */
+    .rankup_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #219af7;
+    }
+
+    .rankup_section h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .rankup_section ol {
+        width: 80%;
+        counter-reset: rankup 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    /* .rankup_section li::before {
+    counter-increment: rankup 1;
+    content: counter(rankup-counter) '.';    
+} */
+
+    /* li의 내용 앞부분에 숫자를 기재해서 추후 개발모드가 들어갔을때 순번을 나타낸다. */
+
+    .rankup_section li {
+        color: #fff;
+        text-align: left;
+        font-weight: bold;
+        width: 45%;
+        margin-bottom: 5px;
+    }
+
+    .rankup_section a {
+        border: 1px solid #fff;
+        display: block;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        padding: 8px 0;
+        border-radius: 5px;
+    }
+
+
+
+}
+
+/* 데스크탑구간설정 */
+@media(min-width:769px) {}
+
+
+
+
+/* 와이드데스크탑구간설정 */
+@media(min-width:1280px) {
+
+    .wrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+
+}
