@@ -29,7 +29,6 @@ img {
 
 .logo {
     font-size: 30px;
-    font-family: "Poetsen One", sans-serif;
 }
 
 .logo a {}
@@ -63,10 +62,75 @@ img {
     max-width: 100%;
 }
 
+/* box6설정
+.box6 {margin-top: 20px; display: flex; justify-content: space-around;}
+.box6-1 {width: 32%;}
+.box6-1 ul {}
+.box6-1 li {text-align: center;}
+.box6-1 li:nth-child(1){color: #fff; background-color: rgb(219, 168, 0); padding: 30px;}
+.box6-1 li:nth-child(1) i {font-size: 60px;}
+.box6-1 li:nth-child(2) {color: #fff; background-color: #222; font-size: 20px; padding: 5px;}
+.box6-1 li:nth-child(3) {color: #fff; background-color: #666; font-size: 14px; padding: 10px;}
+
+.box6-2 {width: 32%;}
+.box6-2 ul {}
+.box6-2 li {text-align: center;}
+.box6-2 li:nth-child(1){color: #fff; background-color: rgb(184, 89, 0); padding: 30px;}
+.box6-2 li:nth-child(1) i {font-size: 60px;}
+.box6-2 li:nth-child(2) {color: #fff; background-color: #222; font-size: 20px; padding: 5px;}
+.box6-2 li:nth-child(3) {color: #fff; background-color: #666; font-size: 14px; padding: 10px;}
+
+.box6-3 {width: 32%;}
+.box6-3 ul {}
+.box6-3 li {text-align: center;}
+.box6-3 li:nth-child(1){color: #fff; background-color: rgb(4, 126, 0); padding: 30px;}
+.box6-3 li:nth-child(1) i {font-size: 60px;}
+.box6-3 li:nth-child(2) {color: #fff; background-color: #222; font-size: 20px; padding: 5px;}
+.box6-3 li:nth-child(3) {color: #fff; background-color: #666; font-size: 14px; padding: 10px;} */
+
+/* 박스6 가로설정 */
+.box6 a {
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+
+.box6-1 a {
+    background-color: #bfbd3f;
+}
+
+.box6-2 a {
+    background-color: rgb(184, 89, 0);
+}
+
+.box6-3 a {
+    background-color: rgb(4, 126, 0);
+}
+
+.box6 i {
+    padding: 40px 0;
+    font-size: 38px;
+}
+
+.box6 h2 {
+    background-color: #222;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.box6 p {
+    background-color: #524e3c;
+    font-size: 14px;
+    padding: 15px 0;
+}
+
 
 /* 공지사항설정*/
 
-.notice {}
+.notice {
+    border: 5px solid #ddd;
+    padding: 20px;
+}
 
 .notice h2 {
     margin-bottom: 5px;
@@ -85,7 +149,7 @@ img {
     border-bottom: dotted 2px #ddd;
 }
 
-.notice a::after {
+.notice a:after {
     content: '';
     display: block;
     clear: both;
@@ -101,6 +165,70 @@ img {
     padding-left: 10px;
 }
 
+/* sns설정 */
+.sns {}
+
+.sns h2 {
+    font-size: 14px;
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.sns ul {}
+
+.sns li {}
+
+.sns a {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sns i {
+    margin-right: 5px;
+}
+
+.sns li:nth-child(1) a {
+    background-color: #1da1f2;
+}
+
+.sns li:nth-child(2) a {
+    background-color: #1877f2;
+}
+
+.sns li:nth-child(3) a {
+    background-color: #c13584;
+}
+
+
+
+/* 말풍선제너레이터연결
+https://cssarrowplease.com/
+ */
+
+.sns h2 {
+    position: relative;
+    background: #dddddd;
+}
+
+.sns h2:after {
+    top: 100%;
+    right: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(221, 221, 221, 0);
+    border-top-color: #dddddd;
+    border-width: 15px;
+    margin-left: -15px;
+}
 
 /* 푸터설정 */
 
@@ -116,6 +244,7 @@ img {
     color: #666;
 }
 
+
 /* 여백설정 */
 .boxA {
     padding: 8px 10px;
@@ -128,6 +257,39 @@ img {
 }
 
 .box5 {}
+
+.box4-1 {
+    padding: 10px 0;
+}
+
+.box4-2 {
+    padding: 10px 0;
+}
+
+.box6 {
+    padding-top: 25px;
+}
+
+.box6 div {
+    padding-bottom: 5px;
+}
+
+
+/* menuBtn 설정 */
+.menuBtn {padding: 5px;
+        border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;}
+.menuBtn i {font-size: 18px;}
+
+
+/* 메뉴를 토글을 클릭했을때만 보이게 하는 설정 */
+.gnb {display: none;}
+
+
+
 
 /* 미디어쿼리구간설정##################################################### */
 
@@ -142,6 +304,7 @@ img {
     .boxA>div {
         width: 50%;
     }
+
 
     /* 네비설정 */
     .box2 {
@@ -158,6 +321,39 @@ img {
         align-items: center;
     }
 
+
+
+    /* 박스4-1과 박스4-2의 가로정렬 */
+    .box4 {
+        display: flex;
+    }
+
+    .box4-1 {
+        width: 70%;
+        padding-right: 35px;
+        box-sizing: border-box;
+    }
+
+    .box4-2 {
+        width: 30%;
+    }
+
+    /* 박스6 가로설정 */
+    .box6 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .box6 div {
+        width: 32%;
+    }
+
+    /* menuBtn */
+    .menuBtn {display: none;}
+
+    /* 메뉴를 토글을 클릭했을때만 보이게 하는 설정 */
+    .gnb {display: block !important;}
+
 }
 
 /* 와이드데스크탑설정 */
@@ -166,6 +362,7 @@ img {
     .boxA,
     .copyright,
     .box3,
+    .box6,
     .box4 {
         width: 1140px;
         margin: 0 auto;
@@ -176,6 +373,7 @@ img {
         padding: 8px 0;
         margin-bottom: 15px;
     }
+
 
 
 
