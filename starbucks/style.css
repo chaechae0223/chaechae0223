@@ -512,6 +512,173 @@ section:nth-child(6) {
     background-attachment: fixed;
 }
 
+.pickup_inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pickup_inner .txtBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pickup_inner .txtBox .topBox {}
+
+.pickup_inner .txtBox .bottomBox {}
+
+.pickup_inner .txtBox span {}
+
+.pickup_inner .txtBox span a {}
+
+.pickup_inner .imgBox {}
+
+.pickup_inner .imgBox img {}
+
+/* 일곱번째 섹션 */
+section:nth-child(7) {}
+
+
+.reserve2_inner {
+    display: flex;
+    position: relative;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserve2_inner .txtBox {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.reserve2_inner .txtBox span {
+    margin-left: 110px;
+    margin-top: 50px;
+}
+
+.reserve2_inner .txtBox span a {
+    color: #000;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.reserve2_inner .txtBox span a:hover {
+    color: #fff;
+    text-decoration: underline;
+    background-color: #000;
+}
+
+
+
+.reserve2_inner .imgBox {
+    position: absolute;
+    right: 120px;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/* 여덟번째 섹션 설정 */
+section:nth-child(8) {
+    background-color: #ddd;
+}
+
+.search_inner {
+    height: 400px;
+    position: relative;
+}
+
+
+.search_inner .imgBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    left: 0;
+    top: 0;
+}
+
+.search_inner .imgBox img {
+    position: absolute;
+}
+
+.search_inner .imgBox .img1 {
+    left: 0;
+    top: 0;
+}
+
+.search_inner .imgBox .img2 {
+    left: 200px;
+    top: 100px;
+}
+
+.search_inner .imgBox .img3 {
+    left: 50%;
+    top: 0;
+    margin-left: -150px;
+}
+
+.search_inner .imgBox .img4 {
+    bottom: 0;
+    right: 150px;
+}
+
+.search_inner .txtBox {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search_inner .txtBox h4 {
+    font-size: 28px;
+}
+
+.search_inner .txtBox h2 {
+    font-size: 18px;
+}
+
+.search_inner .txtBox p {
+    margin: 10px 0;
+}
+
+.search_inner .txtBox span a {
+    color: #000;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+
+/* 푸터설정 */
+
+footer {
+    background-color: #333;
+    height: 300px;
+    color: #fff;
+}
+
+.copyright {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+}
 
 /* 미디어쿼리구간설정############################################### */
 
@@ -525,7 +692,9 @@ section:nth-child(6) {
     .reward_inner,
     .summer_inner,
     .reserve_inner,
-    .pickup_inner {
+    .pickup_inner,
+    .reserve2_inner,
+    .copyright {
         width: 1240px;
         margin: 0 auto;
     }
